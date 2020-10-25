@@ -63,15 +63,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Packages\Base URP\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\Packages\Base URP\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scrpits\ContinuousMovement.cs" />
-    <Compile Include="Assets\Scrpits\InteractableFlashlight.cs" />
-    <Compile Include="Assets\Scrpits\InteractableGun.cs" />
-    <Compile Include="Assets\Scrpits\LocomotionController.cs" />
-    <Compile Include="Assets\VR IK\VRRig.cs" />
-    <Compile Include="Assets\VRAnimatorController.cs" />
-    <Compile Include="Assets\VRFootIK.cs" />
+    <Compile Include="Assets\4.Scripts\InteractableFlashlight.cs" />
+    <Compile Include="Assets\4.Scripts\InteractableGun.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\ContinuousMovement.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\HandPresence.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\LocomotionController.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\VRAnimatorController.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\VRFootIK.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\VRRig.cs" />
+    <Compile Include="Assets\8.Packages\Base URP\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\8.Packages\Base URP\TutorialInfo\Scripts\Readme.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
