@@ -13,6 +13,9 @@ TagManager:
   - UI
   - 
   - 
+  - VR Pickup
+  - VR Player
+  - IK Player
   - 
   - 
   - 
@@ -22,10 +25,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Block Player
   - 
   - 
   - 
