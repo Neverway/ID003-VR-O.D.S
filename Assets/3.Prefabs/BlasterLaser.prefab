@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6924879217020525293}
   m_LocalRotation: {x: -0, y: 0.7071066, z: -0, w: 0.70710707}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0125, y: 0, z: 0}
   m_LocalScale: {x: 0.3999999, y: 0.2, z: 0.19999994}
   m_Children: []
   m_Father: {fileID: 6564626393774550390}
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 6564626393774550390}
   - component: {fileID: 1059264572353934002}
   m_Layer: 0
-  m_Name: Laser
+  m_Name: BlasterLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
