@@ -65,21 +65,23 @@
   <ItemGroup>
     <Compile Include="Assets\4.Scripts\InteractableFlashlight.cs" />
     <Compile Include="Assets\4.Scripts\InteractableGun.cs" />
+    <Compile Include="Assets\4.Scripts\InteractableSnapback.cs" />
+    <Compile Include="Assets\4.Scripts\ObjectDoor.cs" />
     <Compile Include="Assets\4.Scripts\StarfighterGun.cs" />
     <Compile Include="Assets\4.Scripts\StarfighterIgnition.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\ClimbInteract.cs" />
     <Compile Include="Assets\7.IK Source\Scripts\ContinuousMovement.cs" />
     <Compile Include="Assets\7.IK Source\Scripts\HandPresence.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\IKClimb.cs" />
     <Compile Include="Assets\7.IK Source\Scripts\LocomotionController.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\RespawnConditions.cs" />
     <Compile Include="Assets\7.IK Source\Scripts\VRAnimatorController.cs" />
     <Compile Include="Assets\7.IK Source\Scripts\VRFootIK.cs" />
     <Compile Include="Assets\7.IK Source\Scripts\VRRig.cs" />
     <Compile Include="Assets\7.IK Source\Scripts\VRSeat.cs" />
+    <Compile Include="Assets\7.IK Source\Scripts\ZoneRespawn.cs" />
     <Compile Include="Assets\8.Packages\Base URP\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\8.Packages\Base URP\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\ClimbInteract.cs" />
-    <Compile Include="Assets\IKClimb.cs" />
-    <Compile Include="Assets\RespawnConditions.cs" />
-    <Compile Include="Assets\ZoneRespawn.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
