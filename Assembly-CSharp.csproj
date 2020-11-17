@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\4.Scripts\InteractableBlowTorch.cs" />
     <Compile Include="Assets\4.Scripts\InteractableFlashlight.cs" />
     <Compile Include="Assets\4.Scripts\InteractableGun.cs" />
     <Compile Include="Assets\4.Scripts\InteractableSnapback.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Assets\7.IK Source\Scripts\ZoneRespawn.cs" />
     <Compile Include="Assets\8.Packages\Base URP\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\8.Packages\Base URP\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\TaskFighterEngine.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
