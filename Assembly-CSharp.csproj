@@ -66,6 +66,7 @@
     <Compile Include="Assets\4.Scripts\InteractableBlowTorch.cs" />
     <Compile Include="Assets\4.Scripts\InteractableFlashlight.cs" />
     <Compile Include="Assets\4.Scripts\InteractableGun.cs" />
+    <Compile Include="Assets\4.Scripts\InteractablePen.cs" />
     <Compile Include="Assets\4.Scripts\InteractableSnapback.cs" />
     <Compile Include="Assets\4.Scripts\ObjectDoor.cs" />
     <Compile Include="Assets\4.Scripts\ScreenToggle.cs" />
