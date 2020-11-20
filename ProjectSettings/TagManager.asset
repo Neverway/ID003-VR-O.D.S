@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Flame
   - Hit
+  - projectile
+  - FxTemporaire
+  - Climbable
+  - Grabbable
   layers:
   - Default
   - TransparentFX
@@ -15,9 +19,9 @@ TagManager:
   - UI
   - 
   - 
-  - VR Pickup
-  - VR Player
-  - IK Player
+  - VRPlayer
+  - VRPickup
+  - VRHolding
   - 
   - 
   - 
@@ -26,8 +30,8 @@ TagManager:
   - 
   - 
   - 
-  - Trigger
-  - Block Player
+  - 
+  - 
   - 
   - 
   - 

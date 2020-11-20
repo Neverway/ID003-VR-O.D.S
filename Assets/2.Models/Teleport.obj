@@ -1,0 +1,23 @@
+# ProBuilder 4.4.0
+# https://unity3d.com/unity/features/worldbuilding/probuilder
+# 11/19/2020 4:09:42 AM
+
+mtllib ./Teleport.mtl
+o Teleport
+
+g Teleport
+v 25 1 25
+v -25 1 25
+v 25 1 -25
+v -25 1 -25
+
+vt -25 25
+vt 25 25
+vt -25 -25
+vt 25 -25
+
+vn 0 1 0
+
+usemtl URPTeleportAreaVisible
+f 3/3/1 4/4/1 2/2/1 1/1/1
+
