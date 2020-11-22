@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C7D23381-6411-9978-F1F3-194F77F6A4A3}</ProjectGuid>
+    <ProjectGuid>{EF29827E-EE68-7FF0-E823-9F058FB1B536}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,8 +64,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\4.Scripts\Cover.cs" />
-    <Compile Include="Assets\4.Scripts\MovementColliderPosition.cs" />
-    <Compile Include="Assets\4.Scripts\VRPlayerController.cs" />
+    <Compile Include="Assets\4.Scripts\IgnorePlayerCol.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\Button Like\ButtonPush.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\Button Like\JoystickResetPos.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\Button Like\JoystickTrack.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\InteractableFlashlight.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\MovementColliderPosition.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\ObjectRespawnHeight.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\VRPickupIgnorePlayer.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\VRPlayerController.cs" />
     <Compile Include="Assets\Packages\URP\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\VR Instincts\Scripts\BodyTracking\BodyTracking.cs" />
     <Compile Include="Assets\VR Instincts\Scripts\BodyTracking\FootMovment.cs" />
@@ -284,7 +291,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -641,91 +648,91 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{D47F499E-6101-4020-DA7D-C8AAB5CDB76F}</Project>
+      <Project>{F5477605-A1E2-FCC4-7219-E66D0FF578E4}</Project>
       <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{48BCEADA-29B7-BBEC-E0EE-2841FDFA6ACA}</Project>
+      <Project>{E0D6013B-8A69-AA83-52FF-F63F17D4FE27}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{510B4ADB-F646-0C4D-3251-BCA386F29B71}</Project>
+      <Project>{2DC70D1B-36B5-336D-CC2A-E848A09185FC}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
-      <Project>{E058596E-40B1-FEC4-C37F-08E82A682683}</Project>
+      <Project>{978CD436-E1CD-5337-8B91-739841EE7C75}</Project>
       <Name>SteamVR</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{5613C150-3281-D8F1-2300-98DBBCA018F0}</Project>
+      <Project>{B2A49A8A-4B9F-E16B-03EC-399818850D83}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>

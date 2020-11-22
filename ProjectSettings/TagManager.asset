@@ -10,6 +10,7 @@ TagManager:
   - FxTemporaire
   - Climbable
   - Grabbable
+  - PlayerCollider
   layers:
   - Default
   - TransparentFX
@@ -20,18 +21,18 @@ TagManager:
   - 
   - 
   - VRPlayer
+  - VRPlayer Hands
+  - 
+  - 
+  - 
   - VRPickup
-  - VRHolding
+  - VRPickup Holding
+  - VRButton
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - TeleportationArea
   - 
   - 
   - 
