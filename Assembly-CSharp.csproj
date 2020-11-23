@@ -76,6 +76,7 @@
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\VRPickupIgnorePlayer.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\VRPlayerController.cs" />
     <Compile Include="Assets\NetworkPlayer.cs" />
+    <Compile Include="Assets\NetworkPlayer1.cs" />
     <Compile Include="Assets\Packages\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Packages\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Packages\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
@@ -316,11 +317,11 @@
     <Reference Include="Photon3Unity3D">
       <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Assets/Packages/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Assets/Packages/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Assets/Packages/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>D:/Files/Neverway/Games/VR-ODS G3.1/Assets/Packages/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.14f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
