@@ -5276,18 +5276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: DisableHints
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &92682423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5526,6 +5515,7 @@ GameObject:
   - component: {fileID: 118119773}
   - component: {fileID: 118119772}
   - component: {fileID: 118119771}
+  - component: {fileID: 118119774}
   m_Layer: 14
   m_Name: UIButton
   m_TagString: Untagged
@@ -5607,6 +5597,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118119769}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &118119774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118119769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8fd4ca497b40245915a3ceb8f73744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onUITriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 891174746}
+        m_MethodName: InitializeRoom
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUITriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &130075685
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,7 +5811,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: ODS Server 2
+  m_Text: Room 2
 --- !u!222 &137594869
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6287,7 +6306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: ODS Server 4
+  m_Text: Room 4
 --- !u!222 &168771478
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6605,18 +6624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: DisableHints
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &289906002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7239,6 +7247,7 @@ GameObject:
   - component: {fileID: 389849050}
   - component: {fileID: 389849049}
   - component: {fileID: 389849048}
+  - component: {fileID: 389849051}
   m_Layer: 14
   m_Name: UIButton
   m_TagString: Untagged
@@ -7320,6 +7329,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389849046}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &389849051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389849046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8fd4ca497b40245915a3ceb8f73744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onUITriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 891174746}
+        m_MethodName: InitializeRoom
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUITriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &405720791
 GameObject:
   m_ObjectHideFlags: 0
@@ -12824,6 +12862,7 @@ GameObject:
   - component: {fileID: 606345305}
   - component: {fileID: 606345304}
   - component: {fileID: 606345303}
+  - component: {fileID: 606345306}
   m_Layer: 14
   m_Name: UIButton
   m_TagString: Untagged
@@ -12905,6 +12944,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606345301}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &606345306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606345301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8fd4ca497b40245915a3ceb8f73744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onUITriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 891174746}
+        m_MethodName: InitializeRoom
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUITriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &610035822
 GameObject:
   m_ObjectHideFlags: 0
@@ -24019,7 +24087,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0266ad31121ae046bd9168e8727ff54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serverMaxPlayers: 4
+  defaultRooms:
+  - roomName: Room 1
+    sceneIndex: 1
+    roomMaxPlayers: 4
+  - roomName: Room 2
+    sceneIndex: 1
+    roomMaxPlayers: 4
+  - roomName: Room 3
+    sceneIndex: 1
+    roomMaxPlayers: 4
+  - roomName: Room 4
+    sceneIndex: 1
+    roomMaxPlayers: 4
+  - roomName: Room 5
+    sceneIndex: 1
+    roomMaxPlayers: 4
   serverIsVisible: 1
   serverIsOpen: 1
 --- !u!1 &891496203
@@ -24555,6 +24638,7 @@ GameObject:
   - component: {fileID: 997907665}
   - component: {fileID: 997907664}
   - component: {fileID: 997907663}
+  - component: {fileID: 997907666}
   m_Layer: 14
   m_Name: UIButton
   m_TagString: Untagged
@@ -24636,6 +24720,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997907661}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &997907666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997907661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8fd4ca497b40245915a3ceb8f73744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onUITriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 891174746}
+        m_MethodName: InitializeRoom
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUITriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1065937411
 GameObject:
   m_ObjectHideFlags: 0
@@ -24721,7 +24834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: ODS Server 1
+  m_Text: Room 1
 --- !u!222 &1065937415
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25114,18 +25227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: DisableHints
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1159769331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30550,18 +30652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ShowTextHints
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1292392326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42486,7 +42577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: ODS Server 5
+  m_Text: Room 5
 --- !u!222 &1730704384
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52389,7 +52480,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: ODS Server 3
+  m_Text: Room 3
 --- !u!222 &1786529788
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54377,6 +54468,7 @@ GameObject:
   - component: {fileID: 1809354535}
   - component: {fileID: 1809354534}
   - component: {fileID: 1809354533}
+  - component: {fileID: 1809354536}
   m_Layer: 14
   m_Name: UIButton
   m_TagString: Untagged
@@ -54458,6 +54550,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809354531}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1809354536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809354531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8fd4ca497b40245915a3ceb8f73744, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onUITriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 891174746}
+        m_MethodName: InitializeRoom
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onUITriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1830360125
 GameObject:
   m_ObjectHideFlags: 0
@@ -54847,18 +54968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ShowTextHints
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1917070882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55408,18 +55518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: DisableHints
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1938811585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55675,6 +55774,17 @@ MonoBehaviour:
       - m_Target: {fileID: 405720791}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 891174746}
+        m_MethodName: ConnectToServer
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -60784,18 +60894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ShowTextHints
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1975345022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66038,18 +66137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHandClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: DisableHints
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2047433632
 MonoBehaviour:
   m_ObjectHideFlags: 0
