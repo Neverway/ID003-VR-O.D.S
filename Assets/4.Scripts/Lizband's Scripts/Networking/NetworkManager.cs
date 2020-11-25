@@ -15,6 +15,8 @@ public class DefaultRoom
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
     public List<DefaultRoom> defaultRooms;
+    public GameObject JoinUI;
+    public GameObject playerTarget;
     public bool serverIsVisible = true;
     public bool serverIsOpen = true;
 
@@ -35,6 +37,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         base.OnJoinedLobby();
         Debug.Log("[ID003] : Joined lobby!");
+        JoinUI.SetActive(true);
     }
 
     public void InitializeRoom(int deafultRoomIndex)
@@ -42,6 +45,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         DefaultRoom roomSettings = defaultRooms[deafultRoomIndex];
 
         // Load Room
+        Destroy(playerTarget);
         PhotonNetwork.LoadLevel(roomSettings.sceneIndex);
 
         // Create Room
