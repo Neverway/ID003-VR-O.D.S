@@ -66,14 +66,17 @@
     <Compile Include="Assets\4.Scripts\Cover.cs" />
     <Compile Include="Assets\4.Scripts\IgnorePlayerCol.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Button Like\ButtonPush.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\Button Like\EventScriptor.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Button Like\JoystickResetPos.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Button Like\JoystickTrack.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\Button Like\UITrigger.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\MovementColliderPosition.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Networking\NetworkManager.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Networking\NetworkPlayer.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Networking\NetworkPlayer1.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Networking\NetworkPlayerSpawner.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\ObjectRespawnHeight.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\TitleFighterSpin.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Tool Like\InteractableFlashlight.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\VRPickupIgnorePlayer.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\VRPlayerController.cs" />
@@ -134,7 +137,6 @@
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\RemoteSpeakerUI.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\SidebarToggle.cs" />
     <Compile Include="Assets\Photon\PhotonVoice\Demos\DemoVoiceUI\Scripts\UiExtensions.cs" />
-    <Compile Include="Assets\TitleFighterSpin.cs" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Packages\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

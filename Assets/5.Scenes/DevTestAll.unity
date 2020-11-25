@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 37419023}
   - component: {fileID: 37419025}
   - component: {fileID: 37419024}
+  - component: {fileID: 37419026}
   m_Layer: 13
   m_Name: Sphere
   m_TagString: Untagged
@@ -561,6 +562,20 @@ MonoBehaviour:
   viewIdField: 9
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &37419026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37419016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!1 &37990086
 GameObject:
   m_ObjectHideFlags: 0
@@ -7113,6 +7128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 366445091}
+  - component: {fileID: 366445092}
   m_Layer: 0
   m_Name: Cube Stack
   m_TagString: Untagged
@@ -7144,6 +7160,20 @@ Transform:
   m_Father: {fileID: 793948616013191527}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &366445092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366445090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!1 &387626991
 GameObject:
   m_ObjectHideFlags: 0
@@ -19197,6 +19227,7 @@ GameObject:
   - component: {fileID: 884516666}
   - component: {fileID: 884516668}
   - component: {fileID: 884516667}
+  - component: {fileID: 884516669}
   m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
@@ -19479,6 +19510,20 @@ MonoBehaviour:
   viewIdField: 7
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &884516669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884516659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!1 &901033187
 GameObject:
   m_ObjectHideFlags: 0
@@ -26369,6 +26414,7 @@ GameObject:
   - component: {fileID: 1463754915}
   - component: {fileID: 1463754917}
   - component: {fileID: 1463754916}
+  - component: {fileID: 1463754918}
   m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
@@ -26675,6 +26721,20 @@ MonoBehaviour:
   viewIdField: 6
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1463754918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463754908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!43 &1487183185
 Mesh:
   m_ObjectHideFlags: 0
@@ -37921,6 +37981,7 @@ GameObject:
   - component: {fileID: 1829984851}
   - component: {fileID: 1829984853}
   - component: {fileID: 1829984852}
+  - component: {fileID: 1829984854}
   m_Layer: 13
   m_Name: Sphere
   m_TagString: Untagged
@@ -38227,6 +38288,20 @@ MonoBehaviour:
   viewIdField: 5
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1829984854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829984844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!1 &1834427120
 GameObject:
   m_ObjectHideFlags: 0
@@ -38706,6 +38781,7 @@ GameObject:
   - component: {fileID: 1871940579}
   - component: {fileID: 1871940581}
   - component: {fileID: 1871940580}
+  - component: {fileID: 1871940582}
   m_Layer: 13
   m_Name: Flashlight
   m_TagString: Untagged
@@ -39273,6 +39349,20 @@ MonoBehaviour:
   viewIdField: 4
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1871940582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871940569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!1 &1876841119
 GameObject:
   m_ObjectHideFlags: 0
@@ -40075,6 +40165,7 @@ GameObject:
   - component: {fileID: 1935335514}
   - component: {fileID: 1935335516}
   - component: {fileID: 1935335515}
+  - component: {fileID: 1935335517}
   m_Layer: 13
   m_Name: Cyl
   m_TagString: Untagged
@@ -40381,6 +40472,20 @@ MonoBehaviour:
   viewIdField: 3
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1935335517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935335507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!1 &1943822299
 GameObject:
   m_ObjectHideFlags: 0
@@ -50892,6 +50997,7 @@ GameObject:
   - component: {fileID: 249861337277141680}
   - component: {fileID: 249861337277141682}
   - component: {fileID: 249861337277141681}
+  - component: {fileID: 249861337277141683}
   m_Layer: 13
   m_Name: Hammer
   m_TagString: Untagged
@@ -50953,6 +51059,20 @@ MonoBehaviour:
   viewIdField: 2
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &249861337277141683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249861337277141679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!1 &249861337297442316
 GameObject:
   m_ObjectHideFlags: 0
@@ -55319,6 +55439,7 @@ GameObject:
   - component: {fileID: 2681556823439078780}
   - component: {fileID: 2681556823439078782}
   - component: {fileID: 2681556823439078781}
+  - component: {fileID: 2681556823439078783}
   m_Layer: 13
   m_Name: Crowbar
   m_TagString: Untagged
@@ -55398,6 +55519,20 @@ MonoBehaviour:
   viewIdField: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &2681556823439078783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681556823439078778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportAllowed: 1
+  overrideHoverLock: 1
 --- !u!4 &2776125202510721599
 Transform:
   m_ObjectHideFlags: 0
