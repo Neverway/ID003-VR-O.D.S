@@ -16,6 +16,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 {
     public List<DefaultRoom> defaultRooms;
     public GameObject JoinUI;
+    public GameObject JoinUIDesktop;
     public GameObject playerTarget;
     public bool serverIsVisible = true;
     public bool serverIsOpen = true;

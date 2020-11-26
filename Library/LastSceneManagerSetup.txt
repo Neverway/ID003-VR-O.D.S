@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/5.Scenes/Title.unity
+- path: Assets/5.Scenes/EM_Arcade.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
