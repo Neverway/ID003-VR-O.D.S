@@ -11,6 +11,7 @@ public class NetworkPlayer : MonoBehaviour
     public Transform head;
     public Transform leftHand;
     public Transform rightHand;
+    //Bix was the one who figured how to make this script actually work
     public Valve.VR.InteractionSystem.Player player;
     private PhotonView photonView;
 

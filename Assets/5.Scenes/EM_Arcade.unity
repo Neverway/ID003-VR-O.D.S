@@ -440,10 +440,7 @@ GameObject:
   - component: {fileID: 37419019}
   - component: {fileID: 37419018}
   - component: {fileID: 37419023}
-  - component: {fileID: 37419025}
-  - component: {fileID: 37419024}
   - component: {fileID: 37419026}
-  - component: {fileID: 37419027}
   m_Layer: 13
   m_Name: Sphere
   m_TagString: Untagged
@@ -687,46 +684,6 @@ MonoBehaviour:
   targetObject: {fileID: 37419016}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &37419024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37419016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &37419025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37419016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 37419024}
-  - {fileID: 37419027}
-  viewIdField: 9
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &37419026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,18 +698,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &37419027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37419016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &37990086
 GameObject:
   m_ObjectHideFlags: 0
@@ -7167,8 +7112,6 @@ GameObject:
   - component: {fileID: 346775733}
   - component: {fileID: 346775732}
   - component: {fileID: 346775737}
-  - component: {fileID: 346775739}
-  - component: {fileID: 346775738}
   m_Layer: 13
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -7412,45 +7355,6 @@ MonoBehaviour:
   targetObject: {fileID: 346775730}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &346775738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346775730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 0
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &346775739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 346775730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 346775738}
-  viewIdField: 18
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &353618964
 GameObject:
   m_ObjectHideFlags: 0
@@ -7460,7 +7364,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 353618965}
-  - component: {fileID: 353618966}
   m_Layer: 13
   m_Name: Grip
   m_TagString: Untagged
@@ -7482,21 +7385,6 @@ Transform:
   m_Father: {fileID: 775274456}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
---- !u!114 &353618966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353618964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 1
 --- !u!43 &364145920
 Mesh:
   m_ObjectHideFlags: 0
@@ -7709,8 +7597,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 366445091}
-  - component: {fileID: 366445092}
-  - component: {fileID: 366445093}
   m_Layer: 0
   m_Name: Cube Stack
   m_TagString: Untagged
@@ -7742,32 +7628,6 @@ Transform:
   m_Father: {fileID: 793948616013191527}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &366445092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366445090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8d4cc6cf300b3e4bb1411c4e041030c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teleportAllowed: 1
-  overrideHoverLock: 1
---- !u!114 &366445093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366445090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &387626991
 GameObject:
   m_ObjectHideFlags: 0
@@ -7976,7 +7836,6 @@ GameObject:
   - component: {fileID: 395751355}
   - component: {fileID: 395751354}
   - component: {fileID: 395751353}
-  - component: {fileID: 395751352}
   - component: {fileID: 395751350}
   m_Layer: 13
   m_Name: Skeeball
@@ -8015,28 +7874,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &395751352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395751348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents: []
-  viewIdField: 22
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &395751353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8272,8 +8109,6 @@ GameObject:
   - component: {fileID: 452520194}
   - component: {fileID: 452520193}
   - component: {fileID: 452520198}
-  - component: {fileID: 452520200}
-  - component: {fileID: 452520199}
   m_Layer: 13
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -8517,45 +8352,6 @@ MonoBehaviour:
   targetObject: {fileID: 452520191}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &452520199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452520191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &452520200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452520191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 452520199}
-  viewIdField: 17
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &459857066
 GameObject:
   m_ObjectHideFlags: 0
@@ -9928,7 +9724,6 @@ GameObject:
   - component: {fileID: 574087983}
   - component: {fileID: 574087982}
   - component: {fileID: 574087981}
-  - component: {fileID: 574087980}
   - component: {fileID: 574087978}
   m_Layer: 13
   m_Name: Skeeball
@@ -9967,28 +9762,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &574087980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574087976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents: []
-  viewIdField: 21
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &574087981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10224,7 +9997,6 @@ GameObject:
   - component: {fileID: 587756047}
   - component: {fileID: 587756046}
   - component: {fileID: 587756045}
-  - component: {fileID: 587756044}
   - component: {fileID: 587756051}
   - component: {fileID: 587756043}
   - component: {fileID: 587756042}
@@ -10281,29 +10053,6 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &587756044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587756040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 587756043}
-  viewIdField: 20
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &587756045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13155,8 +12904,6 @@ GameObject:
   - component: {fileID: 744767103}
   - component: {fileID: 744767102}
   - component: {fileID: 744767107}
-  - component: {fileID: 744767109}
-  - component: {fileID: 744767108}
   m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
@@ -13400,45 +13147,6 @@ MonoBehaviour:
   targetObject: {fileID: 744767100}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &744767108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 744767100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &744767109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 744767100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 744767108}
-  viewIdField: 16
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &745943929
 GameObject:
   m_ObjectHideFlags: 0
@@ -13875,7 +13583,6 @@ GameObject:
   - component: {fileID: 775274461}
   - component: {fileID: 775274460}
   - component: {fileID: 775274457}
-  - component: {fileID: 775274459}
   m_Layer: 13
   m_Name: Skeeball
   m_TagString: Untagged
@@ -13913,30 +13620,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &775274459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 775274455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1326932902}
-  - {fileID: 353618966}
-  viewIdField: 24
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &775274460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16204,10 +15887,7 @@ GameObject:
   - component: {fileID: 884516662}
   - component: {fileID: 884516661}
   - component: {fileID: 884516666}
-  - component: {fileID: 884516668}
-  - component: {fileID: 884516667}
   - component: {fileID: 884516669}
-  - component: {fileID: 884516670}
   m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
@@ -16451,45 +16131,6 @@ MonoBehaviour:
   targetObject: {fileID: 884516659}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &884516667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884516659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &884516668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884516659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 884516667}
-  viewIdField: 7
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &884516669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16504,18 +16145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &884516670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884516659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &901033187
 GameObject:
   m_ObjectHideFlags: 0
@@ -17986,7 +17615,6 @@ GameObject:
   - component: {fileID: 992523852}
   - component: {fileID: 992523851}
   - component: {fileID: 992523850}
-  - component: {fileID: 992523853}
   m_Layer: 13
   m_Name: Skeeball
   m_TagString: Untagged
@@ -18068,21 +17696,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992523848}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &992523853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992523848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!1 &995838196
 GameObject:
   m_ObjectHideFlags: 0
@@ -18128,7 +17741,6 @@ GameObject:
   - component: {fileID: 1021038722}
   - component: {fileID: 1021038721}
   - component: {fileID: 1021038720}
-  - component: {fileID: 1021038719}
   - component: {fileID: 1021038717}
   m_Layer: 13
   m_Name: Skeeball
@@ -18167,28 +17779,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &1021038719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021038715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents: []
-  viewIdField: 23
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &1021038720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19306,8 +18896,6 @@ GameObject:
   - component: {fileID: 1163917557}
   - component: {fileID: 1163917556}
   - component: {fileID: 1163917561}
-  - component: {fileID: 1163917563}
-  - component: {fileID: 1163917562}
   m_Layer: 13
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -19551,45 +19139,6 @@ MonoBehaviour:
   targetObject: {fileID: 1163917554}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &1163917562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163917554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1163917563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163917554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1163917562}
-  viewIdField: 15
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &1176434065
 GameObject:
   m_ObjectHideFlags: 0
@@ -20749,7 +20298,6 @@ GameObject:
   - component: {fileID: 1255002600}
   - component: {fileID: 1255002599}
   - component: {fileID: 1255002598}
-  - component: {fileID: 1255002601}
   m_Layer: 13
   m_Name: Skeeball
   m_TagString: Untagged
@@ -20831,21 +20379,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255002596}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1255002601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255002596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!1 &1255632046
 GameObject:
   m_ObjectHideFlags: 0
@@ -21469,7 +21002,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1310300042}
-  - component: {fileID: 1310300043}
   m_Layer: 13
   m_Name: Grip
   m_TagString: Untagged
@@ -21491,21 +21023,6 @@ Transform:
   m_Father: {fileID: 574087977}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
---- !u!114 &1310300043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310300041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!1 &1318400404
 GameObject:
   m_ObjectHideFlags: 0
@@ -21548,7 +21065,6 @@ GameObject:
   - component: {fileID: 1326932901}
   - component: {fileID: 1326932900}
   - component: {fileID: 1326932899}
-  - component: {fileID: 1326932902}
   m_Layer: 13
   m_Name: Skeeball
   m_TagString: Untagged
@@ -21630,21 +21146,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326932897}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1326932902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326932897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 1
 --- !u!1 &1355728936
 GameObject:
   m_ObjectHideFlags: 0
@@ -23048,10 +22549,7 @@ GameObject:
   - component: {fileID: 1463754911}
   - component: {fileID: 1463754910}
   - component: {fileID: 1463754915}
-  - component: {fileID: 1463754917}
-  - component: {fileID: 1463754916}
   - component: {fileID: 1463754918}
-  - component: {fileID: 1463754919}
   m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
@@ -23319,46 +22817,6 @@ MonoBehaviour:
   targetObject: {fileID: 1463754908}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &1463754916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463754908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1463754917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463754908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1463754916}
-  - {fileID: 1463754919}
-  viewIdField: 6
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &1463754918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23373,18 +22831,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &1463754919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1463754908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1498079369
 GameObject:
   m_ObjectHideFlags: 0
@@ -26303,8 +25749,6 @@ GameObject:
   - component: {fileID: 1724743388}
   - component: {fileID: 1724743387}
   - component: {fileID: 1724743392}
-  - component: {fileID: 1724743394}
-  - component: {fileID: 1724743393}
   m_Layer: 13
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -26548,45 +25992,6 @@ MonoBehaviour:
   targetObject: {fileID: 1724743385}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &1724743393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724743385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1724743394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1724743385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1724743393}
-  viewIdField: 14
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &1729787499
 GameObject:
   m_ObjectHideFlags: 0
@@ -27367,8 +26772,6 @@ GameObject:
   - component: {fileID: 1782549097}
   - component: {fileID: 1782549096}
   - component: {fileID: 1782549101}
-  - component: {fileID: 1782549103}
-  - component: {fileID: 1782549102}
   m_Layer: 13
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -27612,45 +27015,6 @@ MonoBehaviour:
   targetObject: {fileID: 1782549094}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &1782549102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782549094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1782549103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782549094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1782549102}
-  viewIdField: 13
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &1800135342
 GameObject:
   m_ObjectHideFlags: 0
@@ -27663,7 +27027,6 @@ GameObject:
   - component: {fileID: 1800135346}
   - component: {fileID: 1800135345}
   - component: {fileID: 1800135344}
-  - component: {fileID: 1800135347}
   m_Layer: 13
   m_Name: Skeeball
   m_TagString: Untagged
@@ -27745,21 +27108,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800135342}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1800135347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800135342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!1 &1805362783
 GameObject:
   m_ObjectHideFlags: 0
@@ -27868,8 +27216,6 @@ GameObject:
   - component: {fileID: 1827776491}
   - component: {fileID: 1827776490}
   - component: {fileID: 1827776495}
-  - component: {fileID: 1827776497}
-  - component: {fileID: 1827776496}
   m_Layer: 13
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -28113,45 +27459,6 @@ MonoBehaviour:
   targetObject: {fileID: 1827776488}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &1827776496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827776488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1827776497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1827776488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1827776496}
-  viewIdField: 12
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &1829984844
 GameObject:
   m_ObjectHideFlags: 0
@@ -28167,10 +27474,7 @@ GameObject:
   - component: {fileID: 1829984847}
   - component: {fileID: 1829984846}
   - component: {fileID: 1829984851}
-  - component: {fileID: 1829984853}
-  - component: {fileID: 1829984852}
   - component: {fileID: 1829984854}
-  - component: {fileID: 1829984855}
   m_Layer: 13
   m_Name: Sphere
   m_TagString: Untagged
@@ -28438,46 +27742,6 @@ MonoBehaviour:
   targetObject: {fileID: 1829984844}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &1829984852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829984844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1829984853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829984844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1829984852}
-  - {fileID: 1829984855}
-  viewIdField: 5
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &1829984854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28492,18 +27756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &1829984855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829984844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1834427120
 GameObject:
   m_ObjectHideFlags: 0
@@ -28818,9 +28070,6 @@ GameObject:
   - component: {fileID: 1871940577}
   - component: {fileID: 1871940578}
   - component: {fileID: 1871940579}
-  - component: {fileID: 1871940581}
-  - component: {fileID: 1871940583}
-  - component: {fileID: 1871940580}
   - component: {fileID: 1871940582}
   m_Layer: 13
   m_Name: Flashlight
@@ -28996,7 +28245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachmentFlags: 21
+  attachmentFlags: 85
   attachmentOffset: {fileID: 749468009}
   catchingSpeedThreshold: -1
   releaseVelocityStyle: 3
@@ -29350,46 +28599,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1871940580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871940569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1871940581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871940569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1871940583}
-  - {fileID: 1871940580}
-  viewIdField: 4
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &1871940582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29404,18 +28613,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &1871940583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871940569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1876841119
 GameObject:
   m_ObjectHideFlags: 0
@@ -29431,8 +28628,6 @@ GameObject:
   - component: {fileID: 1876841122}
   - component: {fileID: 1876841121}
   - component: {fileID: 1876841126}
-  - component: {fileID: 1876841128}
-  - component: {fileID: 1876841127}
   m_Layer: 13
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -29676,45 +28871,6 @@ MonoBehaviour:
   targetObject: {fileID: 1876841119}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &1876841127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876841119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1876841128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876841119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1876841127}
-  viewIdField: 11
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &1883605646
 GameObject:
   m_ObjectHideFlags: 0
@@ -29724,7 +28880,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1883605647}
-  - component: {fileID: 1883605648}
   m_Layer: 13
   m_Name: Grip
   m_TagString: Untagged
@@ -29746,21 +28901,6 @@ Transform:
   m_Father: {fileID: 1021038716}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
---- !u!114 &1883605648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883605646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!43 &1883674570
 Mesh:
   m_ObjectHideFlags: 0
@@ -30262,10 +29402,7 @@ GameObject:
   - component: {fileID: 1935335510}
   - component: {fileID: 1935335509}
   - component: {fileID: 1935335514}
-  - component: {fileID: 1935335516}
-  - component: {fileID: 1935335515}
   - component: {fileID: 1935335517}
-  - component: {fileID: 1935335518}
   m_Layer: 13
   m_Name: Cyl
   m_TagString: Untagged
@@ -30533,46 +29670,6 @@ MonoBehaviour:
   targetObject: {fileID: 1935335507}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &1935335515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935335507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &1935335516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935335507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 1935335515}
-  - {fileID: 1935335518}
-  viewIdField: 3
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &1935335517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30587,18 +29684,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &1935335518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935335507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1943822299
 GameObject:
   m_ObjectHideFlags: 0
@@ -34433,8 +33518,6 @@ GameObject:
   - component: {fileID: 2010535296}
   - component: {fileID: 2010535295}
   - component: {fileID: 2010535300}
-  - component: {fileID: 2010535302}
-  - component: {fileID: 2010535301}
   m_Layer: 13
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -34678,45 +33761,6 @@ MonoBehaviour:
   targetObject: {fileID: 2010535293}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &2010535301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010535293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &2010535302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010535293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 2010535301}
-  viewIdField: 10
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!82 &2010679235
 AudioSource:
   m_ObjectHideFlags: 0
@@ -35692,7 +34736,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2030627451}
-  - component: {fileID: 2030627452}
   m_Layer: 13
   m_Name: Grip
   m_TagString: Untagged
@@ -35714,21 +34757,6 @@ Transform:
   m_Father: {fileID: 395751349}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
---- !u!114 &2030627452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030627450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!1 &2030694218
 GameObject:
   m_ObjectHideFlags: 0
@@ -36393,8 +35421,6 @@ GameObject:
   - component: {fileID: 2078153067}
   - component: {fileID: 2078153066}
   - component: {fileID: 2078153071}
-  - component: {fileID: 2078153073}
-  - component: {fileID: 2078153072}
   m_Layer: 13
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -36638,45 +35664,6 @@ MonoBehaviour:
   targetObject: {fileID: 2078153064}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &2078153072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078153064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &2078153073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078153064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 2078153072}
-  viewIdField: 8
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!1 &2091878330
 GameObject:
   m_ObjectHideFlags: 0
@@ -38438,10 +37425,7 @@ GameObject:
   - component: {fileID: 249861337277141672}
   - component: {fileID: 249861337277141673}
   - component: {fileID: 249861337277141680}
-  - component: {fileID: 249861337277141682}
-  - component: {fileID: 249861337277141681}
   - component: {fileID: 249861337277141683}
-  - component: {fileID: 249861337277141684}
   m_Layer: 13
   m_Name: Hammer
   m_TagString: Untagged
@@ -38464,45 +37448,6 @@ MonoBehaviour:
   targetObject: {fileID: 249861337277141679}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &249861337277141681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249861337277141679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &249861337277141682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249861337277141679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 249861337277141681}
-  viewIdField: 2
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &249861337277141683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38517,18 +37462,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &249861337277141684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249861337277141679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &249861337297442316
 GameObject:
   m_ObjectHideFlags: 0
@@ -44086,10 +43019,7 @@ GameObject:
   - component: {fileID: 2681556823439078777}
   - component: {fileID: 2681556823439078776}
   - component: {fileID: 2681556823439078780}
-  - component: {fileID: 2681556823439078782}
-  - component: {fileID: 2681556823439078781}
   - component: {fileID: 2681556823439078783}
-  - component: {fileID: 2681556823439078784}
   m_Layer: 13
   m_Name: Crowbar
   m_TagString: Untagged
@@ -44130,45 +43060,6 @@ MonoBehaviour:
   targetObject: {fileID: 2681556823439078778}
   respawnTarget: {fileID: 1989603816}
   respawnHeight: -100
---- !u!114 &2681556823439078781
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2681556823439078778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 1
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &2681556823439078782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2681556823439078778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  observableSearch: 2
-  Synchronization: 3
-  OwnershipTransfer: 1
-  ObservedComponents:
-  - {fileID: 2681556823439078781}
-  viewIdField: 1
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &2681556823439078783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44183,18 +43074,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportAllowed: 1
   overrideHoverLock: 1
---- !u!114 &2681556823439078784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2681556823439078778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56e7ff1f4521f7a49a873feedb8d450a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2776125202510721599
 Transform:
   m_ObjectHideFlags: 0

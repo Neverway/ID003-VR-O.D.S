@@ -285,6 +285,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14180}
     - Class: 114
+      Script: {instanceID: 14244}
+    - Class: 114
       Script: {instanceID: 14258}
     - Class: 114
       Script: {instanceID: 14486}
@@ -3960,4 +3962,4 @@ ScriptsOnlyBuild:
   - Assets/5.Scenes/Title.unity
   - Assets/5.Scenes/EM_DevTestAll.unity
   - Assets/5.Scenes/EM_Arcade.unity
-  playerPath: C:/Users/trash/Desktop/VR-O.D.S 3.0.13/VR-ODS G3.exe
+  playerPath: C:/Users/trash/Desktop/VR-O.D.S 3.0.14/VR-ODS G3.exe
