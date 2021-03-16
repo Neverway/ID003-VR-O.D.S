@@ -7263,18 +7263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onUITriggerEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 891174746}
-        m_MethodName: InitializeRoom
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUITriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -7573,18 +7562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onUITriggerEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 891174746}
-        m_MethodName: InitializeRoom
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUITriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -7756,18 +7734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onUITriggerEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 891174746}
-        m_MethodName: InitializeRoom
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUITriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -13760,40 +13727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onUITriggerEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 405720791}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 68772465}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 871063415}
-        m_MethodName: DisconnectFromServer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUITriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -24529,25 +24463,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0266ad31121ae046bd9168e8727ff54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultRooms:
-  - roomName: Room 1
-    sceneIndex: 1
-    roomMaxPlayers: 4
-  - roomName: Room 2
-    sceneIndex: 2
-    roomMaxPlayers: 4
-  - roomName: Room 3
-    sceneIndex: 1
-    roomMaxPlayers: 4
-  - roomName: Room 4
-    sceneIndex: 1
-    roomMaxPlayers: 4
-  - roomName: Room 5
-    sceneIndex: 1
-    roomMaxPlayers: 4
-  JoinUI: {fileID: 68772465}
+  defaultRooms: []
+  JoinUI: {fileID: 0}
   JoinUIDesktop: {fileID: 0}
-  playerTarget: {fileID: 7897888109585015184}
+  playerTarget: {fileID: 0}
   serverIsVisible: 1
   serverIsOpen: 1
 --- !u!1 &891496203
@@ -25025,18 +24944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onUITriggerEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 891174746}
-        m_MethodName: InitializeRoom
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUITriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -43457,18 +43365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onUITriggerEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 871063415}
-        m_MethodName: QuitGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUITriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -48449,18 +48346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onUITriggerEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 891174746}
-        m_MethodName: InitializeRoom
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUITriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -56358,29 +56244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onUITriggerEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 405720791}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 891174746}
-        m_MethodName: ConnectToServer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUITriggerExit:
     m_PersistentCalls:
       m_Calls: []
@@ -72941,12 +72805,12 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 1
+  observableSearch: 2
   ObservedComponents:
   - {fileID: 356646308022381553}
-  viewIdField: 1
+  sceneViewId: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!4 &417660970139527397
@@ -73018,6 +72882,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030bee7c79525374ebf91f16b8be8dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stepRateX: 1
+  stepRateY: 1
+  stepRateZ: 1
 --- !u!54 &919132148089635273
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -79412,6 +79279,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7434e43635fb2924583f5e0f2fb6ed3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snapAngle: 90
+  showTurnAnimation: 1
+  snapTurnSource: {fileID: 0}
+  rotateSound: {fileID: 0}
+  rotateRightFX: {fileID: 0}
+  rotateLeftFX: {fileID: 0}
+  snapLeftAction:
+    actionPath: /actions/default/in/SnapTurnLeft
+    needsReinit: 0
+  snapRightAction:
+    actionPath: /actions/default/in/SnapTurnRight
+    needsReinit: 0
+  fadeScreen: 1
+  fadeTime: 0.1
+  screenFadeColor: {r: 0, g: 0, b: 0, a: 1}
+  distanceFromFace: 1.3
+  additionalOffset: {x: 0, y: -0.3, z: 0}
+  canTurnEverySeconds: 0.4
 --- !u!114 &7786702881631325396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80386,6 +80271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6043f3be9a21bd74281f9770463bea00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 4
+  shiftSpeed: 16
+  showInstructions: 1
 --- !u!114 &7897888109578563180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80805,10 +80693,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input:
-    actionPath: /actions/default/in/SmoothLoco
+    actionPath: 
     needsReinit: 0
-  HMDRef: {fileID: 7897888109585033270}
-  speed: 4
+  HMDRef: {fileID: 0}
+  speed: 1
 --- !u!54 &7897888109585015181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -80837,7 +80725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172b122d8318a5b429469ff4e48dd0f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCenter: {fileID: 7897888109585467896}
+  playerCenter: {fileID: 7897888109585486312}
   characterController: {fileID: 7897888109585015186}
 --- !u!1 &7897888109585015184
 GameObject:
