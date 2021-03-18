@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/5.Scenes/EM_CitraCity.unity
+- path: Assets/5.Scenes/EM_Bix.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
