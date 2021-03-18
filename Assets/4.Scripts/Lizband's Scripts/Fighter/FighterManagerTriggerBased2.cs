@@ -27,18 +27,19 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
     private float pivotIdleY;   // Joystick idle/return position
     private float pivotIdleZ;   // Joystick idle/return position
 
-    private bool tiltingUp;     // Is the joystick in the up position?
-    private bool tiltingDown;   // Is the joystick in the down position?
-    private bool tiltingLeft;   // Is the joystick in the left position?
-    private bool tiltingRight;  // Is the joystick in the right position?
+    public bool tiltingUp;     // Is the joystick in the up position?
+    public bool tiltingDown;   // Is the joystick in the down position?
+    public bool tiltingLeft;   // Is the joystick in the left position?
+    public bool tiltingRight;  // Is the joystick in the right position?
 
 
 
-
+    public Vector3 limits = new Vector3(6, 12, 0);
     public float fighterTiltForwardLimit = -0.12f;
     public float fighterTiltBackwardLimit = 0.12f;
     public float fighterTiltLeftLimit = 0.1f;
     public float fighterTiltRightLimit = 0.1f;
+
     public float joystickSensitivity = 1f;
     public float joystickDeadzone = 0.5f;
 
@@ -59,17 +60,15 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
             // Tilt Up
             if (tiltingUp)
             {
-            
-                if (fighterShip.transform.localRotation.z >= fighterTiltForwardLimit)
+                // Rotate until a certain position, then move ship
+                if (fighterShip.transform.localRotation.z > fighterRoot.transform.localRotation.z - 0.12f)
                 {
-                    Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z - joystickSensitivity);
+                    Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z - 1);
                     fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
-                    Debug.Log("FTilt");
                 }
-                if (fighterShip.transform.localRotation.z <= fighterTiltForwardLimit)
+                if (fighterShip.transform.localRotation.z <= fighterRoot.transform.localRotation.z - 0.12f)
                 {
-                    Debug.Log("F");
-                    fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y + stepSpeed, fighterShip.transform.position.z);
+                    //fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y + stepSpeed, fighterShip.transform.position.z);
                 }
             }
 
@@ -77,16 +76,14 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
             // Tilt Down
             if (tiltingDown)
             {
-                if (fighterShip.transform.rotation.z <= fighterTiltBackwardLimit)
+                if (fighterShip.transform.localRotation.z < fighterRoot.transform.localRotation.z + 0.12f)
                 {
-                    Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z + joystickSensitivity);
+                    Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z + 1);
                     fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
-                    Debug.Log("BTilt");
                 }
                 if (fighterShip.transform.localRotation.z >= fighterTiltBackwardLimit)
                 {
-                    Debug.Log("B");
-                    fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y - stepSpeed, fighterShip.transform.position.z);
+                    //fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y - stepSpeed, fighterShip.transform.position.z);
                 }
             }
 
@@ -94,16 +91,15 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
             // Tilt Right
             if (tiltingRight)
             {
-                if (fighterShip.transform.localRotation.x <= fighterTiltRightLimit)
+                // Rotate until a certain position, then move ship
+                if (fighterShip.transform.localRotation.x < fighterRoot.transform.localRotation.x + 0.2f)
                 {
-                    Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x + joystickSensitivity, 0f, 0f);
+                    Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x + 1, 0f, 0f);
                     fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
-                    Debug.Log("RTilt");
                 }
                 if (fighterShip.transform.localRotation.x >= fighterTiltRightLimit)
                 {
-                    Debug.Log("R");
-                    fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y, fighterShip.transform.position.z + stepSpeed);
+                    //fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y, fighterShip.transform.position.z + stepSpeed);
                 }
             }
 
@@ -111,16 +107,15 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
             // Tilt Left
             if (tiltingLeft)
             {
-                if (fighterShip.transform.localRotation.x >= fighterTiltLeftLimit)
+                // Rotate until a certain position, then move ship
+                if (fighterShip.transform.localRotation.x > fighterRoot.transform.localRotation.x - 0.2f)
                 {
-                    Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x - joystickSensitivity, 0f, 0f);
+                    Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x - 1, 0f, 0f);
                     fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
-                    Debug.Log("LTilt");
                 }
                 if (fighterShip.transform.localRotation.x <= fighterTiltLeftLimit)
                 {
-                    Debug.Log("L");
-                    fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y, fighterShip.transform.position.z - stepSpeed);
+                    //fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y, fighterShip.transform.position.z - stepSpeed);
                 }
             }
 
@@ -128,12 +123,46 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
             // Return Verticle
             if (!tiltingUp && !tiltingDown)
             {
-
+                // Rotate until a certain position, then move ship
+                if (fighterShip.transform.localRotation.z < 0.005f && fighterShip.transform.localRotation.z > -0.005f)
+                {
+                
+                }
+                else
+                {
+                    if (fighterShip.transform.localRotation.z > 0)
+                    {
+                        Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z - 1f);
+                        fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
+                    }
+                    if (fighterShip.transform.localRotation.z < 0)
+                    {
+                        Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z + 1f);
+                        fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
+                    }
+                }
             }
             // Return Horizontal
             if (!tiltingLeft && !tiltingRight)
             {
+                // Rotate until a certain position, then move ship
+                if (fighterShip.transform.localRotation.x < 0.005f && fighterShip.transform.localRotation.x > -0.005f)
+                {
 
+                }
+                else
+                {
+                    if (fighterShip.transform.localRotation.x > 0)
+                    {
+                        Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x - 1f, 0f, 0f);
+                        fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
+                    }
+                    if (fighterShip.transform.localRotation.x < 0)
+                    {
+                        Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x + 1f, 0f, 0f);
+                        fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
+                    }
+                }
             }
         }
 
