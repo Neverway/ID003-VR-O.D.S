@@ -31,52 +31,57 @@ public class BixsBetterFighterManager : MonoBehaviour
     public float RotateSpeed = 1f;
     public float ReturnSpeed = 1f;
 
+    public FighterManagerTriggerBased2 fighterManager;
+
     public void Start()
     {
         //Gets all of the game objects at the start of the game 
         fighterRoot = transform.parent.gameObject;
         StatDisplay = transform.GetChild(1).GetChild(0).GetChild(1).gameObject;
-        jetEffect = transform.GetChild(4).gameObject;
+        jetEffect = transform.GetChild(6).gameObject;
+
+        fighterManager = GetComponent<FighterManagerTriggerBased2>();
     }
 
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            toggleIgnition();
-        }
-        if (Input.GetKey(KeyCode.I)) {
-            tiltingDown = true;
-        }
-        else
-        {
-            tiltingDown = false;
-        }
-        if (Input.GetKey(KeyCode.K))
-        {
-            tiltingUp = true;
-        }
-        else
-        {
-            tiltingUp = false;
-        }
-        if (Input.GetKey(KeyCode.J))
-        {
-            tiltingLeft = true;
-        }
-        else
-        {
-            tiltingLeft = false;
-        }
-        if (Input.GetKey(KeyCode.L))
-        {
-            tiltingRight = true;
-        }
-        else
-        {
-            tiltingRight= false;
-        }
+        ignition = fighterManager.controlsPrimed;
+        //if (Input.GetKeyDown(KeyCode.O))
+        //{
+        //    toggleIgnition();
+        //}
+        //if (Input.GetKey(KeyCode.I)) {
+        //    tiltingDown = true;
+        //}
+        //else
+        //{
+        //    tiltingDown = false;
+        //}
+        //if (Input.GetKey(KeyCode.K))
+        //{
+        //    tiltingUp = true;
+        //}
+        //else
+        //{
+        //    tiltingUp = false;
+        //}
+        //if (Input.GetKey(KeyCode.J))
+        //{
+        //    tiltingLeft = true;
+        //}
+        //else
+        //{
+        //    tiltingLeft = false;
+        //}
+        //if (Input.GetKey(KeyCode.L))
+        //{
+        //    tiltingRight = true;
+        //}
+        //else
+        //{
+        //    tiltingRight= false;
+        //}
 
         // Flight controls
         if (ignition)
@@ -123,59 +128,33 @@ public class BixsBetterFighterManager : MonoBehaviour
             }
 
         }
-
-
-        // Take Off and Return
-        if (takeOff)
-        {
-            Debug.LogWarning("Take off");
-            // move the ship forward a set amount
-            GetComponent<Rigidbody>().velocity = fighterRoot.transform.forward * takeOffDistance;
-        }
-
-        if (dock)
-        {
-            Debug.LogWarning("Dock");
-            // move the ship backward a set amount
-            GetComponent<Rigidbody>().velocity = -fighterRoot.transform.forward * takeOffDistance;
-        }
     }
 
 
     private IEnumerator TakeOff()
     {
         yield return new WaitForSeconds(3);
-        takeOff = false;
-        dock = false;
     }
 
 
-    public void toggleIgnition()
-    {
-        if (ignition)
-        {
-            if (!takeOff || !dock)
-            {
-                dock = true;
-                StartCoroutine("TakeOff");
-                jetEffect.SetActive(false);
-                StatDisplay.SetActive(false);
-                ignition = false;
-            }
-        }
+    //public void toggleIgnition()
+    //{
+    //    if (ignition)
+    //    {
+    //            StartCoroutine("TakeOff");
+    //            jetEffect.SetActive(false);
+    //            StatDisplay.SetActive(false);
+    //            ignition = false;
+    //    }
 
-        else if (!ignition)
-        {
-            if (!takeOff || !dock)
-            {
-                takeOff = true;
-                StartCoroutine("TakeOff");
-                jetEffect.SetActive(true);
-                StatDisplay.SetActive(true);
-                ignition = true;
-            }
-        }
-    }
+    //    if (!ignition)
+    //    {
+    //            StartCoroutine("TakeOff");
+    //            jetEffect.SetActive(true);
+    //            StatDisplay.SetActive(true);
+    //            ignition = true;
+    //    }
+    //}
 
 
     public void tiltUpOn()
