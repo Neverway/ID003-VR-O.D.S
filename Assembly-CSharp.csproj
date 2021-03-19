@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\4.Scripts\Bix's Better Scripts\BixsBetterFighterManager.cs" />
     <Compile Include="Assets\4.Scripts\Bix's Better Scripts\Cover.cs" />
     <Compile Include="Assets\4.Scripts\Bix's Better Scripts\IgnorePlayerCol.cs" />
     <Compile Include="Assets\4.Scripts\Bix's Better Scripts\InteractableSkeeball.cs" />
