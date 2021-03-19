@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FighterManagerTriggerBased2 : MonoBehaviour
 {
@@ -43,6 +44,9 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
 
     public float joystickSensitivity = 1f;
     public float joystickDeadzone = 0.5f;
+
+    public UnityEvent onControlsPrimed;
+    public UnityEvent onControlsOff;
 
     public void Start()
     {
@@ -156,12 +160,14 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
         dock = false;
         yield return new WaitForSeconds(1);
         controlsPrimed = true;
+        onControlsPrimed.Invoke();
     }
 
     private IEnumerator Dock()
     {
         yield return new WaitForSeconds(3);
         controlsPrimed = false;
+        onControlsOff.Invoke();
         takeOff = false;
         dock = false;
     }
