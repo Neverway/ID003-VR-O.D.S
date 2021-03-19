@@ -15,9 +15,10 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
     public GameObject displayOn;
     public GameObject jetEffect;    // The flame effect to enable on ignition
 
-    public float takeOffDistance;   // How far forward should the ship fly on ignition?
-    public float stepSpeed;         // forward take off speed
+    public float takeOffDistance = 15;   // How far forward should the ship fly on ignition?
+    public float stepSpeed;         // Ship speed
     public bool ignition;           // Is the engine on?
+    public bool controlsPrimed;     // Are the controls active?
     private bool takeOff;           // Is the fighter trying to take off?
     private bool dock;              // Is the fighter trying to dock?
 
@@ -55,20 +56,22 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
     private void Update()
     {
         // Flight controls
-        if (ignition)
+        if (ignition && controlsPrimed)
         {
             // Tilt Up
             if (tiltingUp)
             {
+                Debug.Log(fighterShip.transform.localRotation.z);
                 // Rotate until a certain position, then move ship
                 if (fighterShip.transform.localRotation.z > fighterRoot.transform.localRotation.z - 0.12f)
                 {
-                    Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z - 1);
-                    fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
+                    //Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z - .25f);
+                    //fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
                 }
-                if (fighterShip.transform.localRotation.z <= fighterRoot.transform.localRotation.z - 0.12f)
+                if (fighterShip.transform.localPosition.y < 12)
                 {
-                    //fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y + stepSpeed, fighterShip.transform.position.z);
+                    Vector3 movement = fighterRoot.transform.up * stepSpeed * Time.deltaTime;
+                    fighterShip.transform.position = transform.position + movement;
                 }
             }
 
@@ -78,12 +81,13 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
             {
                 if (fighterShip.transform.localRotation.z < fighterRoot.transform.localRotation.z + 0.12f)
                 {
-                    Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z + 1);
-                    fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
+                    //Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z + .25f);
+                    //fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
                 }
-                if (fighterShip.transform.localRotation.z >= fighterTiltBackwardLimit)
+                if (fighterShip.transform.localPosition.y > -12)
                 {
-                    //fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y - stepSpeed, fighterShip.transform.position.z);
+                    Vector3 movement = fighterRoot.transform.up * stepSpeed * Time.deltaTime;
+                    fighterShip.transform.position = transform.position - movement;
                 }
             }
 
@@ -94,12 +98,13 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
                 // Rotate until a certain position, then move ship
                 if (fighterShip.transform.localRotation.x < fighterRoot.transform.localRotation.x + 0.2f)
                 {
-                    Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x + 1, 0f, 0f);
-                    fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
+                    //Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x + .5f, 0f, 0f);
+                    //fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
                 }
-                if (fighterShip.transform.localRotation.x >= fighterTiltRightLimit)
+                if (fighterShip.transform.localPosition.x < 12)
                 {
-                    //fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y, fighterShip.transform.position.z + stepSpeed);
+                    Vector3 movement = fighterRoot.transform.right * stepSpeed * Time.deltaTime;
+                    fighterShip.transform.position = transform.position + movement;
                 }
             }
 
@@ -110,60 +115,18 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
                 // Rotate until a certain position, then move ship
                 if (fighterShip.transform.localRotation.x > fighterRoot.transform.localRotation.x - 0.2f)
                 {
-                    Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x - 1, 0f, 0f);
-                    fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
+                    //Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x - .5f, 0f, 0f);
+                    //fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
                 }
-                if (fighterShip.transform.localRotation.x <= fighterTiltLeftLimit)
+                if (fighterShip.transform.localPosition.x > -12)
                 {
-                    //fighterShip.transform.position = new Vector3(fighterShip.transform.position.x, fighterShip.transform.position.y, fighterShip.transform.position.z - stepSpeed);
+                    Vector3 movement = fighterRoot.transform.right * stepSpeed * Time.deltaTime;
+                    fighterShip.transform.position = transform.position - movement;
                 }
             }
 
             // Returning tilt
-            // Return Verticle
-            if (!tiltingUp && !tiltingDown)
-            {
-                // Rotate until a certain position, then move ship
-                if (fighterShip.transform.localRotation.z < 0.005f && fighterShip.transform.localRotation.z > -0.005f)
-                {
-                
-                }
-                else
-                {
-                    if (fighterShip.transform.localRotation.z > 0)
-                    {
-                        Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z - 1f);
-                        fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
-                    }
-                    if (fighterShip.transform.localRotation.z < 0)
-                    {
-                        Quaternion localRotation = Quaternion.Euler(0f, 0f, fighterShip.transform.rotation.z + 1f);
-                        fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
-                    }
-                }
-            }
-            // Return Horizontal
-            if (!tiltingLeft && !tiltingRight)
-            {
-                // Rotate until a certain position, then move ship
-                if (fighterShip.transform.localRotation.x < 0.005f && fighterShip.transform.localRotation.x > -0.005f)
-                {
-
-                }
-                else
-                {
-                    if (fighterShip.transform.localRotation.x > 0)
-                    {
-                        Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x - 1f, 0f, 0f);
-                        fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
-                    }
-                    if (fighterShip.transform.localRotation.x < 0)
-                    {
-                        Quaternion localRotation = Quaternion.Euler(fighterShip.transform.rotation.x + 1f, 0f, 0f);
-                        fighterShip.transform.rotation = fighterShip.transform.rotation * localRotation;
-                    }
-                }
-            }
+            ReturnShipRotations2();
         }
 
 
@@ -172,14 +135,16 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
         {
             Debug.LogWarning("Take off");
             // move the ship forward a set amount
-            fighterShip.GetComponent<Rigidbody>().velocity = fighterRoot.transform.forward * takeOffDistance;
+            Vector3 movement = fighterRoot.transform.forward * takeOffDistance * Time.deltaTime;
+            fighterShip.GetComponent<Rigidbody>().MovePosition(transform.position + movement);
         }
 
         if (dock)
         {
             Debug.LogWarning("Dock");
             // move the ship backward a set amount
-            fighterShip.GetComponent<Rigidbody>().velocity = -fighterRoot.transform.forward * takeOffDistance;
+            Vector3 movement = fighterRoot.transform.forward * takeOffDistance * Time.deltaTime;
+            fighterShip.GetComponent<Rigidbody>().MovePosition(transform.position - movement);
         }
     }
 
@@ -187,6 +152,16 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
     private IEnumerator TakeOff()
     {
         yield return new WaitForSeconds(3);
+        takeOff = false;
+        dock = false;
+        yield return new WaitForSeconds(1);
+        controlsPrimed = true;
+    }
+
+    private IEnumerator Dock()
+    {
+        yield return new WaitForSeconds(3);
+        controlsPrimed = false;
         takeOff = false;
         dock = false;
     }
@@ -199,7 +174,7 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
             if (!takeOff || !dock)
             {
                 dock = true;
-                StartCoroutine("TakeOff");
+                StartCoroutine("Dock");
                 jetEffect.SetActive(false);
                 displayOn.SetActive(false);
                 ignition = false;
@@ -217,6 +192,11 @@ public class FighterManagerTriggerBased2 : MonoBehaviour
                 ignition = true;
             }
         }
+    }
+
+    private void ReturnShipRotations2()
+    {
+        
     }
 
 

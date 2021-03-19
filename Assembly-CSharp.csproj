@@ -73,6 +73,7 @@
     <Compile Include="Assets\4.Scripts\Bix's Better Scripts\Tasks\TestTask.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Depreciated\NetworkPlayer1.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Fighter\FighterManager.cs" />
+    <Compile Include="Assets\4.Scripts\Lizband's Scripts\Fighter\FighterManagerAnimBased.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Fighter\FighterManagerTriggerBased.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Fighter\FighterManagerTriggerBased2.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Fighter\JoystickObjectMeet.cs" />
