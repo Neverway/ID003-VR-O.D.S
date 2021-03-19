@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vrodsg3.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Lizband_UCC\\Desktop\\Desktop\\Neverway\\Games\\U3D-VR-O.D.S\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\Memphis P\\Documents\\Repositories\\Game Development\\U3D-VR-O.D.S\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "VR-ODS G3 [Testing]"
