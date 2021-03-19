@@ -67,6 +67,10 @@
     <Compile Include="Assets\4.Scripts\Bix's Better Scripts\InteractableSkeeball.cs" />
     <Compile Include="Assets\4.Scripts\Bix's Better Scripts\JoystickResetPos.cs" />
     <Compile Include="Assets\4.Scripts\Bix's Better Scripts\JoystickTrack.cs" />
+    <Compile Include="Assets\4.Scripts\Bix's Better Scripts\Tasks\Base Task System\TaskControl.cs" />
+    <Compile Include="Assets\4.Scripts\Bix's Better Scripts\Tasks\Base Task System\TaskManager.cs" />
+    <Compile Include="Assets\4.Scripts\Bix's Better Scripts\Tasks\Base Task System\TaskUI.cs" />
+    <Compile Include="Assets\4.Scripts\Bix's Better Scripts\Tasks\TestTask.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Depreciated\NetworkPlayer1.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Fighter\FighterManager.cs" />
     <Compile Include="Assets\4.Scripts\Lizband's Scripts\Fighter\FighterManagerTriggerBased.cs" />
