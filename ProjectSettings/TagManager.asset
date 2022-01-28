@@ -12,6 +12,9 @@ TagManager:
   - Grabbable
   - PlayerCollider
   - JOY
+  - Bullet
+  - Floor
+  - ODS_Ship
   layers:
   - Default
   - TransparentFX
@@ -44,7 +47,7 @@ TagManager:
   - 
   - 
   - Ship
-  - 
+  - MiniMap
   m_SortingLayers:
   - name: Default
     uniqueID: 0

@@ -1,0 +1,5 @@
+newmtl URPTeleportAreaVisible
+map_Ke TeleportAreaPatternColor.tga
+Kd 0.2637435 0.6344103 0.834
+d 0.6196079
+
